@@ -1,0 +1,4 @@
+// A comment isn't a token
+let name = "aland";
+const PI = 3.14156;
+const sum = 7 + 12;
