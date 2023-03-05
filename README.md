@@ -1,4 +1,4 @@
-# IAD
+# Interpreter AD
 
 Custom interpreter to use custom programming language.
 

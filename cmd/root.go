@@ -12,11 +12,15 @@ func getRootCommand() *cobra.Command {
 	var rootCmd = &cobra.Command{
 		Use:   "interpreter",
 		Short: "interpreter is a simple scripting language interpreter",
-		Long:  `Learn more at https://github.com/AlanD20/interpreter`,
+		Long:  `Learn more at https://github.com/AlanD20/iad`,
 		Run: func(cmd *cobra.Command, args []string) {
 
-			// Process input file
-			internal.Run(input, output)
+			if input != "" {
+				// Process input file
+				internal.RunFile(input, output)
+			} else {
+				internal.RunRepl()
+			}
 		},
 	}
 
