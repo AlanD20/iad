@@ -87,7 +87,7 @@ type Token struct {
 	Line      uint16
 }
 
-func (t *Token) New(tokenType TokenType, word string, value string, line uint16) Token {
+func NewToken(tokenType TokenType, word string, value string, line uint16) Token {
 
 	return Token{
 		TokenType: tokenType,
