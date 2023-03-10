@@ -3,8 +3,8 @@ package test
 import (
 	"testing"
 
-	"github.com/aland20/iad/internal"
-	"github.com/aland20/iad/internal/expr"
+	"github.com/aland20/interpreter/internal"
+	"github.com/aland20/interpreter/internal/expr"
 )
 
 func TestString(t *testing.T) {

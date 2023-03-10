@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/aland20/iad/internal/utils"
+	"github.com/aland20/interpreter/internal/utils"
 )
 
 type Scanner struct {

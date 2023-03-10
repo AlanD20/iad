@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/aland20/iad/internal/utils"
+	"github.com/aland20/interpreter/internal/utils"
 )
 
 func TestIsDigit(t *testing.T) {

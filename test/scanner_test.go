@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aland20/iad/internal"
+	"github.com/aland20/interpreter/internal"
 )
 
 func TestScanner(t *testing.T) {

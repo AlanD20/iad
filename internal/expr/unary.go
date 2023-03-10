@@ -1,6 +1,6 @@
 package expr
 
-import "github.com/aland20/iad/internal"
+import "github.com/aland20/interpreter/internal"
 
 type Unary struct {
 	Operator internal.Token

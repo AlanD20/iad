@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aland20/iad/cmd"
+	"github.com/aland20/interpreter/cmd"
 )
 
 func main() {

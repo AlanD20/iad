@@ -1,4 +1,4 @@
-module github.com/aland20/iad
+module github.com/aland20/interpreter
 
 go 1.20
 

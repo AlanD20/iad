@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/aland20/iad/internal/utils"
+	"github.com/aland20/interpreter/internal/utils"
 	"github.com/chzyer/readline"
 )
 

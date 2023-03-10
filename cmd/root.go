@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/aland20/iad/internal"
+	"github.com/aland20/interpreter/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -11,8 +11,8 @@ func getRootCommand() *cobra.Command {
 
 	var rootCmd = &cobra.Command{
 		Use:   "interpreter",
-		Short: "interpreter is a simple scripting language interpreter",
-		Long:  `Learn more at https://github.com/AlanD20/iad`,
+		Short: "interpreter is a simple scripting language",
+		Long:  `Learn more at https://github.com/AlanD20/interpreter`,
 		Run: func(cmd *cobra.Command, args []string) {
 
 			if input != "" {
