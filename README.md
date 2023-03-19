@@ -2,7 +2,7 @@
 
 This tool allows you to write scripts, rendering tools, and many more tools without sacrificing Speed and Memory.
 
-This implementation uses Go as a base language to take advantage of goroutines and many other useful features that Go provides.
+Implementation will be in Rust to take advantage of memory-safety, performance, and many more useful features that rust provides.
 
 ## Roadmap
 
@@ -18,7 +18,7 @@ This implementation uses Go as a base language to take advantage of goroutines a
     - [x] Functions
     - [x] Control Structure
     - [x] Operators
-  - [x] Lexer/Scanner
+  - [ ] Lexer/Scanner
     - [ ] Error Detection
   - [ ] Parser
     - [ ] Abstract Syntax Tree (AST)

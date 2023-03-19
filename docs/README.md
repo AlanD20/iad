@@ -4,13 +4,7 @@ The documentation assumes you have installed the `interpreter` and you have acce
 
 ## Installation
 
-You may build the project by cloning the project locally and make sure you have installed `go-1.20`. To build the project, run the following command:
-
-```bash
-go build -o interpreter main.go
-```
-
-Now, you have access to the interpreter and continue with the documentaiton.
+WiP...
 
 ## CLI
 
@@ -19,6 +13,6 @@ Now, you have access to the interpreter and continue with the documentaiton.
 - **Run Script File**: You may use `run` command to provide a script file.
 
   ```bash
-    interpreter run my-script.iad
-    interpreter run my-script.iad -o out
+    interpreter run -i my-script.iad
+    interpreter run -i my-script.iad -o out
   ```

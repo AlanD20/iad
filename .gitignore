@@ -1,7 +1,7 @@
 .vscode/settings.json
 
 .env
+*.lock
 
 # Builds
-go-*/
-go-noting*
+/target
