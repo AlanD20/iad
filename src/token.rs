@@ -1,7 +1,7 @@
 pub type Number = f64;
 pub type Line = usize;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Token {
     pub kind: TokenKind,
     pub word: String,
@@ -20,7 +20,7 @@ impl Token {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub enum TokenKind {
     // Single-character tokens
     LeftParen,

@@ -1,14 +1,33 @@
 use std::{io::Write, path::PathBuf};
 
+use crate::scanner::Scanner;
+
+pub fn run(source: &[u8]) {
+    let mut scanner = Scanner::new(&source);
+
+    match scanner.scan_tokens() {
+        Ok(tokens) => {
+            for token in tokens.iter() {
+                println!("{}", token.word);
+            }
+        }
+        Err(errors) => {
+            for error in errors.iter() {
+                println!("{}", error.to_string());
+            }
+        }
+    }
+}
+
 pub fn file(input: &String, output: Option<&String>) -> Result<(), Box<dyn std::error::Error>> {
     let mut path = PathBuf::new();
     path.push(std::env::current_dir()?);
     path.push(input);
 
-    let content = std::fs::read_to_string(&path)?;
+    let content = std::fs::read(&path)?;
 
     println!("output will be at: {:?}", output);
-    println!("here is file content: \n {}", content);
+    run(&content);
 
     Ok(())
 }
@@ -26,7 +45,7 @@ pub fn repl() -> Result<(), Box<dyn std::error::Error>> {
             break;
         }
 
-        print!("Line is okay to process: {}", line);
+        run(line.as_bytes());
     }
 
     Ok(())

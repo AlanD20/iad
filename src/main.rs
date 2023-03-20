@@ -1,5 +1,8 @@
 mod cmd;
+mod error;
+// mod expr;
 mod run;
+mod scanner;
 mod token;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
