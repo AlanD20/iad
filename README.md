@@ -1,8 +1,8 @@
 # Interpreter
 
-This tool allows you to write scripts, rendering tools, and many more tools without sacrificing Speed and Memory.
+This tool allows you to write scripts, rendering tools, and many more tools without sacrificing `Speed` and `Memory`.
 
-This implementation uses Go as a base language to take advantage of goroutines and many other useful features that Go provides.
+This implementation uses Go as a base language to take advantage of features that Go provides.
 
 ## Roadmap
 
@@ -76,8 +76,8 @@ This implementation uses Go as a base language to take advantage of goroutines a
 
 ## Why?
 
-This project is purely a hobby project to explore and learn more about how to build an interpreter tool from scratch and learn more about optimization, AST, garbage collection, and many related topics that helps me understand how interpeters work.
-My intention is to create a simple, compiled scripting language that helps beginners to learn quickly to write scripts that is efficient in memory and speed.
+This project is purely a hobby project to explore and learn more about how to build an interpreter tool from scratch and learn more about optimization, AST, garbage collection, and many related topics that helps me understand how interpeters work. <br>
+My intention is to create a simple, compiled scripting language that helps beginners to learn quickly to write scripts that is efficient in memory and speed. <br>
 I try to omit boilerplates as much as possible to help people start writing their script without wasting time on boilerplates.
 
 ## Contribution
